@@ -13,3 +13,9 @@ a { color: var(--accent); }
 .hero img { width: 128px; height: 128px; border-radius: 28px; }
 .hero p { margin: 4px 0; }
 nav { margin-top: 40px; }
+ol.steps { list-style: none; padding: 0; margin: 32px 0; counter-reset: step; }
+ol.steps li { counter-increment: step; position: relative; padding: 0 0 28px 48px; margin: 0; }
+ol.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: bold; text-align: center; line-height: 32px; }
+ol.steps p { margin: 2px 0 10px; }
+.button { display: inline-block; padding: 10px 20px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: bold; text-decoration: none; }
+.note { border-top: 1px solid var(--line); padding-top: 16px; }
